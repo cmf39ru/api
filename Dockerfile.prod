@@ -1,0 +1,7 @@
+FROM node:alpine
+COPY package.json /app/
+RUN cd /app && \
+    npm install --quiet --production
+WORKDIR /app
+COPY . .
+CMD npm run start

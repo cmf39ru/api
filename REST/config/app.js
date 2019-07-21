@@ -1,7 +1,7 @@
 const express = require('express'),
       app = express(),
       bodyParser = require('body-parser'),
-      morgan = require('morgan'),
+      // morgan = require('morgan'),
       consign = require('consign'),
       cors = require('cors'),
       passport = require('passport'),
@@ -14,7 +14,7 @@ const express = require('express'),
 app.use(express.static('.'))
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
-app.use(morgan('dev'))
+// app.use(morgan('dev'))
 app.use(cors())
 app.use(passport.initialize())
 

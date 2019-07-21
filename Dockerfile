@@ -1,8 +1,8 @@
-FROM node:alpine
+FROM node:latest
 COPY package.json /app/
 RUN cd /app && \
-    npm install --quiet --production
+    npm install && \
+    npm install -g nodemon
 WORKDIR /app
-COPY . .
-CMD npm run start
-
+EXPOSE ${PORT}
+CMD npm run development

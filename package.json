@@ -1,7 +1,7 @@
 {
-  "name": "hm_venom",
-  "version": "1.0.0",
-  "description": "Dockerised NodeJS+MongoDB App",
+  "name": "cmf39api",
+  "version": "1.0.1",
+  "description": "CMF39 api",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
